@@ -28,9 +28,9 @@ public class DBConfig {
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-        final String url = "jdbc:postgresql://localhost:5432/bankdb";
+        final String url = "jdbc:postgresql://postgres.railway.internal:5432/railway";
         final String username = "postgres";
-        final String password = "dbuser";
+        final String password = "BFbRSMwDdNDVteFGxlxVjfwfCNCMKdtn";
         try(Connection conn = DriverManager.getConnection(url, username, password)){
             log.info("Database connection succeeded...");
 
